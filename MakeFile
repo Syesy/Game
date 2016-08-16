@@ -1,0 +1,16 @@
+Cash: Game_project.o  player.o MapNode.o command.o
+	g++ -o Cash Game_project.o MapNode.o player.o command.o
+
+Game_project.o: Game_project.cpp
+	g++ -c Game_project.cpp
+	
+player.o: player.cpp
+	g++ -c player.cpp
+	
+MapNode.o: MapNode.cpp
+	g++ -c MapNode.cpp
+	
+command.o: command.cpp
+	g++ -c command.cpp
+	
+	
